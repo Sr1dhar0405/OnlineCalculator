@@ -10,7 +10,8 @@ steps:
     publishWebProjects: true
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'gab-dotNetSP'
-    appType: 'webAppLinux'
-    appName: 'gab-webapp'
+    azureSubscription: 'Free Trial(434ca04e-38f7-4032-8e02-8977505b54f9)'
+    appType: 'webApp'
+    appName: 'gab-webapp45'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    deploymentMethod: 'auto'
